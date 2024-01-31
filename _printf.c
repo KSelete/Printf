@@ -4,7 +4,6 @@
 /**
  * _printf - Produces output according to a format.
  * @format: Format string
- *
  * Return: Number of characters printed (excluding null byte)
  */
 int _printf(const char *format, ...)
@@ -48,7 +47,6 @@ int _printf(const char *format, ...)
 	}
 	
 	va_end(args);
-
 	return printed_chars;
 }
 
@@ -62,7 +60,7 @@ int _printstr(char *str)
 	int printed_chars = 0;
 
 	if (str == NULL)
-		str = "(null)";
+	    str = "(null)";
 
 	while (*str)
 	{
